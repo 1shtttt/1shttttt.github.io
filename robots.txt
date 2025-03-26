@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://вашпитомец.by/sitemap.xml
+Sitemap: https://1shtttt.github.io/1shttttt.github.io//sitemap.xml
