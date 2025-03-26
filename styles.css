@@ -103,6 +103,42 @@ footer {
     margin-top: 3rem;
 }
 
+/* Стили для секции отзывов */
+#reviews {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.review-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на новую строку на маленьких экранах */
+}
+
+.review-card {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+.review-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
 /* Медиа-запросы для мобильных устройств */
 
 /* Для планшетов (ширина до 768px) */
@@ -130,6 +166,16 @@ footer {
 
     .social button {
         padding: 0.6rem 1.2rem;
+    }
+
+    /* Адаптация для отзывов */
+    .review-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        max-width: 100%;
     }
 }
 
@@ -171,5 +217,18 @@ footer {
     .social button {
         width: 100%;
         padding: 0.8rem;
+    }
+
+    /* Адаптация для отзывов */
+    #reviews {
+        padding: 1rem;
+    }
+
+    .review-card {
+        padding: 1rem;
+    }
+
+    .review-text, .review-author {
+        font-size: 0.9rem;
     }
 }
